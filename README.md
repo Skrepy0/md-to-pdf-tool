@@ -1,7 +1,7 @@
 # Markdown to PDF 转换工具
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-一个易于使用的 Markdown 到 PDF 转换工具，基于 [md-to-pdf](https://github.com/alanorozco/md-to-pdf) 构建。
+一个易于使用的 Markdown 到 PDF 转换工具，基于 [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf) 构建。
 
 ## 特性
 
