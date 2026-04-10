@@ -171,7 +171,7 @@ npm run start:debug
 
 ## 技术栈
 
-- [md-to-pdf](https://github.com/alanorozco/md-to-pdf) - Markdown 转 PDF 核心库
+- [md-to-pdf](https://github.com/simonhaenisch/md-to-pdf) - Markdown 转 PDF 核心库
 - [TypeScript](https://www.typescriptlang.org/) - 类型安全的 JavaScript
 - [Commander.js](https://github.com/tj/commander.js) - 命令行参数解析
 - [MathJax](https://www.mathjax.org/) - 数学公式渲染
