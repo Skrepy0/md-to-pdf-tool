@@ -1,0 +1,32 @@
+{
+  "name": "md-to-pdf-tool",
+  "version": "1.0.0",
+  "description": "Markdown to PDF 转换工具",
+  "repository": {
+    "type": "git",
+    "url": "md-to-pdf-tool"
+  },
+  "license": "Apache License Version 2.0",
+  "author": "Skrepy",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "tsx src/index.ts",
+    "start:watch": "tsx watch src/index.ts",
+    "start:debug": "tsx src/index.ts --debug",
+    "start:debug:watch": "tsx watch src/index.ts --debug",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "md-to-pdf": "^5.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
