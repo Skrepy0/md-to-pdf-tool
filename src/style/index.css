@@ -29,7 +29,22 @@
 .hljs{
     background-color: #ecf4fa !important;
 }
+blockquote {
+  position: relative;          
+  background-color: #e0e9ef;
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  border-left: 4px solid #a6bdd1;
+  font-style: italic;
+  border-radius: 0 8px 8px 0;
+  overflow: hidden;
+}
 
+blockquote p {
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
 .markdown-body pre {
   padding: 16px;
   border-radius: 6px;

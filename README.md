@@ -42,6 +42,8 @@ npm run start:watch
 npm run start:debug:watch
 ```
 
+> 注意:使用开始转换的时候务必先删除output文件夹中的pdf,并将public文件夹中的目标文件在编辑器中关闭,不然可能无法转换
+
 ### 构建
 
 ```bash

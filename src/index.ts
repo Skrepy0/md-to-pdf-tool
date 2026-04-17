@@ -56,6 +56,7 @@ async function convertAllMarkdown() {
       console.log(`\n📄 转换: ${file}`)
       console.log(`   输入: ${inputPath}`)
       console.log(`   输出: ${newConfig.dest}`)
+      console.log(`   转换中...`)
       try {
         const pdf = await mdToPdf({path: inputPath}, newConfig)
         if (pdf) {
