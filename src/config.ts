@@ -37,3 +37,7 @@ export const config: Partial<PdfConfig> = {
     },
   ],
 }
+
+export const sysConfig = {
+  autoClean:false // 转换前自动清空输出目录
+}

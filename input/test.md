@@ -2,7 +2,7 @@
 
 这是一个演示 Markdown 常用格式的文档，用于测试转换工具与样式表现。
 
-> ⚠️ 注意：转换时，public 目录下 `test.md` 会被忽略。
+> ⚠️ 注意：转换时，input 目录下 `test.md` 会被忽略。
 
 ---
 
@@ -54,7 +54,7 @@
 这是 <mark>高亮文本</mark>（部分渲染器支持）。
 
 这是上标：X<sup>2</sup>  
-这是下标：H<sub>2</sub>O  
+这是下标：H<sub>2</sub>O
 
 ---
 
@@ -64,27 +64,27 @@
 
 - 项目 1
 - 项目 2
-  - 嵌套项目 2.1
-  - 嵌套项目 2.2
+    - 嵌套项目 2.1
+    - 嵌套项目 2.2
 - 项目 3
 
 ### 有序列表
 
 1. 第一项
 2. 第二项
-   1. 嵌套 2.1
-   2. 嵌套 2.2
+    1. 嵌套 2.1
+    2. 嵌套 2.2
 3. 第三项
 
 ### 混合列表
 
 1. 第一步
-   - 子步骤 A
-   - 子步骤 B
+    - 子步骤 A
+    - 子步骤 B
 2. 第二步
-   - 子步骤 C
-     1. 详细步骤 C.1
-     2. 详细步骤 C.2
+    - 子步骤 C
+        1. 详细步骤 C.1
+        2. 详细步骤 C.2
 
 ---
 
@@ -106,8 +106,8 @@
 
 [Google][1] 和 [GitHub][2] 是常用网站。
 
-[1]: https://www.google.com  
-[2]: https://www.github.com  
+[1]: https://www.google.com
+[2]: https://www.github.com
 
 ---
 
@@ -171,7 +171,7 @@ console.log("这是一个 TypeScript 示例");
 
 ### 行内公式
 
-这是一个积分公式：$\int_{a}^{b} f(x),dx$
+这是一个积分公式：$\int_{a}^{b} f(x)dx$
 
 ### 块级公式
 
@@ -225,7 +225,6 @@ $$
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
-该文档覆盖了 Markdown 常见功能，用于：
 
-* 测试 Markdown → PDF 转换效果
-* 检查样式兼容性
+123456[^此处应有注脚]
+[^此处应有注脚]:这是注脚内容

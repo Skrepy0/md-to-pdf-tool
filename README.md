@@ -42,7 +42,7 @@ npm run start:watch
 npm run start:debug:watch
 ```
 
-> 注意:使用开始转换的时候务必先删除output文件夹中的pdf,并将public文件夹中的目标文件在编辑器中关闭,不然可能无法转换
+> 注意:使用开始转换的时候务必先删除output文件夹中的pdf,并将input文件夹中的目标文件在编辑器中关闭,不然可能无法转换, 在src/config.ts中sysConfig中,将autoClean设置为true,可以在转换前自动清空输出目录
 
 ### 构建
 
@@ -58,7 +58,7 @@ npm run build:watch
 
 ```
 md-to-pdf-tool/
-├── public/              # 存放待转换的 Markdown 文件
+├── input/              # 存放待转换的 Markdown 文件
 │   ├── assets/         # 静态资源（字体、图片等）
 │   ├── index.md        # 示例 Markdown 文件
 │   └── test.md         # 调试用 Markdown 文件
@@ -83,20 +83,20 @@ md-to-pdf-tool/
 3. 支持自定义字体、颜色、间距等样式
 
 ### 默认字体
-默认字体的编写可以参照 `src/style/index.css` 中的示例;将字体文件放在`public/assets/`目录下。
+默认字体的编写可以参照 `src/style/index.css` 中的示例;将字体文件放在`input/assets/`目录下。
 
 ## 使用说明
 
 ### 一、准备 Markdown 文件
 
 1. 打开项目根目录
-2. 进入 `public` 文件夹
+2. 进入 `input` 文件夹
 3. 将需要转换的 Markdown 文件（`.md`）放入该文件夹
 4. 注意：文件名不要命名为 `test.md`（这是调试用的文件）
 
 **示例：**
 ```
-public/
+input/
 ├── index.md       # 可以转换
 ├── my-doc.md      # 可以转换
 └── test.md        # 调试文件，普通模式不会转换
@@ -111,7 +111,7 @@ npm run start
 ```
 
 **执行步骤：**
-1. 程序会自动扫描 `public` 文件夹中的所有 `.md` 文件
+1. 程序会自动扫描 `input` 文件夹中的所有 `.md` 文件
 2. 排除 `test.md` 文件
 3. 逐个将 Markdown 文件转换为 PDF
 4. 转换完成后，PDF 文件保存在 `output` 文件夹中
